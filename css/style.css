@@ -120,6 +120,23 @@ footer {
     justify-content: center;
 }
 
+aside {
+    margin-right: 20px;
+}
+
+.top {
+    background-color: rgb(32, 177, 177);
+    border-radius: 10px;
+    color: white;
+    padding: 13px;
+    float: right;
+    cursor: pointer;
+}
+
+.top:hover {
+    background-color: rgb(25, 136, 136);
+}
+
 footer .download {
     padding: 10px;
     border-radius: 7px;
