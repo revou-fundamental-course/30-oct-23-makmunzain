@@ -1,0 +1,159 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #F8F0E5;
+}
+
+header div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.nav-list a {
+    color: black;
+}
+
+.nav-list a:hover {
+    color: #7b2199;
+    border-bottom: 2px solid black;
+    border-radius: 2px;
+    transition: ease;
+}
+
+#head-text {
+    width: 50%;
+    margin: 20px auto;
+}
+
+.calc div {
+    margin-bottom: 20px;
+}
+
+.htg-bmi {
+    padding: 4px;
+    border-radius: 5px;
+    background-color: rgb(32, 177, 177);
+    color: white;
+    margin: 10px auto;
+}
+
+.rst-bmi {
+    padding: 4px;
+    border-radius: 5px;
+}
+
+#calc {
+    background-color: #EADBC8;
+    width: 50%;
+    margin: 20px auto 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#hsl-bmi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: #EADBC8;
+    width: 50%;
+    margin: 20px auto 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#feature {
+    width: 50%;
+    margin: 20px auto 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#result {
+    width: 50%;
+    margin: 20px auto 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+p {
+    text-align: justify;
+}
+
+#penyakit {
+    background-color: #EADBC8;
+    width: 50%;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#penyakit p {
+    text-align: center;
+}
+
+.htg-bmi:hover{
+    background-color: rgb(25, 136, 136);
+    cursor: pointer;
+}
+
+.rst-bmi:hover{
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    gap: 10px;
+    width: 50%;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .download {
+    padding: 10px;
+    border-radius: 7px;
+    background-color: black;
+    color: white;
+}
+
+.download:hover {
+    cursor: pointer;
+}
+
+.icon {
+    font-size: 30px;
+    position: absolute;
+}
+
+.text-app {
+    margin-left: 35px;
+}
+
+@media screen and (max-width: 800px) {
+    header div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        align-content: center;
+    }
+
+    #result {
+        width: 50%;
+        margin: 20px auto 0;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+    }
+}
