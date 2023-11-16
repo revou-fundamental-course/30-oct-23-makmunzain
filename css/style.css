@@ -8,29 +8,54 @@
 
 body{
     background-color: #F8F0E5;
+    overflow: auto;
 }
 
-header div {
+#nav-head {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin-top: 10px;
-}
-
-.nav-list a {
-    color: black;
-}
-
-.nav-list a:hover {
-    color: #7b2199;
-    border-bottom: 2px solid black;
-    border-radius: 2px;
-    transition: ease;
+    padding-top: 25px;
+    margin: 0 20px;
 }
 
 #head-text {
-    width: 50%;
-    margin: 20px auto;
+    width: 80%;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.nav-list a {
+    background-color: rgb(182, 21, 21);
+    border: 1px solid rgb(182, 21, 21);
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.nav-list a:hover {
+    background-color: transparent;
+    color: rgb(182, 21, 21);
+    border: 1px solid rgb(182, 21, 21);
+}
+
+#kalkulator {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+#calc {
+    background-color: #EADBC8;
+    width: 40%;
+    margin-top: 30px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 5px 9px 15px -6px rgba(0,0,0,0.74);
+    -webkit-box-shadow: 5px 9px 15px -6px rgba(0,0,0,0.74);
+    -moz-box-shadow: 5px 9px 15px -6px rgba(0,0,0,0.74);
 }
 
 .calc div {
@@ -50,42 +75,45 @@ header div {
     border-radius: 5px;
 }
 
-#calc {
-    background-color: #EADBC8;
-    width: 50%;
-    margin: 20px auto 0;
-    padding: 10px;
-    border-radius: 5px;
-}
-
 #hsl-bmi {
     display: none;
     flex-direction: column;
     align-items: center;
     gap: 10px;
     background-color: #EADBC8;
-    width: 50%;
-    margin: 20px auto 0;
-    padding: 10px;
-    border-radius: 5px;
+    width: 40%;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 5px 9px 15px -6px rgba(0,0,0,0.74);
+    -webkit-box-shadow: 5px 9px 15px -6px rgba(0,0,0,0.74);
+    -moz-box-shadow: 5px 9px 15px -6px rgba(0,0,0,0.74);
 }
 
 #feature {
-    width: 50%;
-    margin: 20px auto 0;
-    padding: 10px;
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 20px;
     border-radius: 5px;
+    text-align: justify;
+}
+
+#weight {
+    max-width: 80%;
+}
+
+#age {
+    max-width: 80%;;
+}
+
+#height {
+    max-width: 80%;;
 }
 
 #result {
-    width: 50%;
-    margin: 20px auto 0;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-p {
-    text-align: justify;
+    width: 80%;
+    margin-top: 40px;
+    margin-left: 20px;
 }
 
 #penyakit {
@@ -93,8 +121,11 @@ p {
     width: 50%;
     margin: 20px auto;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     text-align: center;
+    box-shadow: 5px 9px 15px -6px rgba(0,0,0,0.74);
+    -webkit-box-shadow: 5px 9px 15px -6px rgba(0,0,0,0.74);
+    -moz-box-shadow: 5px 9px 15px -6px rgba(0,0,0,0.74);
 }
 
 #penyakit p {
@@ -114,7 +145,8 @@ footer {
     display: flex;
     gap: 10px;
     width: 50%;
-    margin: 0px auto;
+    margin-top: 20px;
+    margin-left: 20px;
     margin-bottom: 20px;
     align-items: center;
     justify-content: center;
@@ -137,7 +169,12 @@ aside {
     background-color: rgb(25, 136, 136);
 }
 
+footer {
+    margin: 20px auto;
+}
+
 footer .download {
+    width: 100%;
     padding: 10px;
     border-radius: 7px;
     background-color: black;
@@ -162,15 +199,58 @@ footer .download {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 10px;
+        gap: 20px;
         align-content: center;
     }
 
-    #result {
+    #head-text {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 20px;
+        text-align: justify;
+    }
+
+    #feature {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 20px;
+        text-align: justify;
+    }
+
+    #hsl-bmi {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        background-color: #EADBC8;
         width: 50%;
-        margin: 20px auto 0;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
         padding: 10px;
-        border-radius: 5px;
+        border-radius: 10px;
+        box-shadow: 5px 9px 15px -6px rgba(0,0,0,0.74);
+        -webkit-box-shadow: 5px 9px 15px -6px rgba(0,0,0,0.74);
+        -moz-box-shadow: 5px 9px 15px -6px rgba(0,0,0,0.74);
+    }
+
+    #result {
+        width: 80%;
+        margin: 40px auto 0;
+        text-align: justify;
+    }
+
+    #kalkulator {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
         text-align: center;
+        margin: 0 auto;
+        font-size: 13px;
+        width: 90%;
+    }
+
+    footer {
+        margin: 50px auto;
     }
 }

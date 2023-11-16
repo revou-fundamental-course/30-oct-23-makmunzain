@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script src="js/script.js"></script>
@@ -11,53 +11,25 @@
     <body>
         <header>
             <div id="header">
-                <div class="logo">
+                <div id="nav-head">
                     <h1>BMI Calculator</h1>
+                    <nav class="nav-list">
+                        <a href="#download">Download</a>
+                    </nav>
                 </div>
-                <nav class="nav-list">
-                    <a href="#download">Download</a>
-                </nav>
+                <div id="head-text">
+                    <p>
+                        Berat badan ideal adalah impian semua orang.
+                        Tidak hanya memiliki bentuk tubuh yang menunjang 
+                        penampilan, berat badan ideal juga menandakan 
+                        kondisi tubuh yang sehat. Bagaimana denganmu? 
+                        Yuk, hitung sekarang di kalkulator BMI.
+                    </p>
+                </div>
             </div>
         </header>
 
         <main>
-            <div id="head-text">
-                <p>
-                    Berat badan ideal adalah impian semua orang.
-                    Tidak hanya memiliki bentuk tubuh yang menunjang 
-                    penampilan, berat badan ideal juga menandakan 
-                    kondisi tubuh yang sehat. Bagaimana denganmu? 
-                    Yuk, hitung sekarang di kalkulator BMI.
-                </p>
-            </div>
-            <div id="calc" class="calc">
-                <div class="jk-radio">
-                    <p>Jenis Kelamin</p>
-                    <input type="radio" id="pria" name="jenis_kelamin" value="pria">
-                    <label for="pria">Pria</label>
-                    <input type="radio" id="wanita" name="jenis_kelamin" value="wanita">
-                    <label for="wanita">Wanita</label>
-                </div>
-
-                <div class="brt-badan">
-                    <label for="weight">Berat Badan (kg)</label><br>
-                    <input type="number" id="weight" min="0" class="inp-weight" required>
-                </div>
-
-                <div class="usia">
-                    <label for="age">Usia (tahun)</label><br>
-                    <input type="number" id="age" min="0" required>
-                </div>
-
-                <div class="tg-badan">
-                    <label for="height">Tinggi Badan (cm)</label><br>
-                    <input type="number" id="height" min="0" required>
-                </div>
-
-                <input type="button" onclick="hitungBMI()" value="Hitung BMI" class="htg-bmi">
-                <input type="button" onclick="resetBMI()" value="Reset" class="rst-bmi">
-            </div>
-
             <div id="feature">
                 <h3>Keunggulan Fitur</h3>
                 <ol>
@@ -79,14 +51,44 @@
                     kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/M<sup>2</sup>.
                 </p>
             </div>
+            
+            <div id="kalkulator">
+                <div id="calc" class="calc">
+                    <div class="jk-radio">
+                        <p>Jenis Kelamin</p>
+                        <input type="radio" id="pria" name="jenis_kelamin" value="pria">
+                        <label for="pria">Pria</label>
+                        <input type="radio" id="wanita" name="jenis_kelamin" value="wanita">
+                        <label for="wanita">Wanita</label>
+                    </div>
 
-            <div id="hsl-bmi">
-                <h2 id="judulHasil"></h2>
-                <p id="kategoriBMI"></p>
-                <p id="angkaBMI"></p>
-                <p id="keteranganBMI"></p>
+                    <div class="brt-badan">
+                        <label for="weight">Berat Badan (kg)</label><br>
+                        <input type="number" id="weight" min="0" class="inp-weight" required>
+                    </div>
 
-                <input type="button" value="Download Hitung BMI" class="htg-bmi">
+                    <div class="usia">
+                        <label for="age">Usia (tahun)</label><br>
+                        <input type="number" id="age" min="0" required>
+                    </div>
+
+                    <div class="tg-badan">
+                        <label for="height">Tinggi Badan (cm)</label><br>
+                        <input type="number" id="height" min="0" required>
+                    </div>
+
+                    <input type="button" onclick="hitungBMI()" value="Hitung BMI" class="htg-bmi">
+                    <input type="button" onclick="resetBMI()" value="Reset" class="rst-bmi">
+                </div>
+
+                <div id="hsl-bmi">
+                    <h2 id="judulHasil"></h2>
+                    <p id="kategoriBMI"></p>
+                    <p id="angkaBMI"></p>
+                    <p id="keteranganBMI"></p>
+        
+                    <input type="button" value="Download Hitung BMI" class="htg-bmi">
+                </div>
             </div>
 
             <div id="result">
@@ -114,10 +116,11 @@
                 <input type="button" value="Konsultasi Dokter Via Aplikasi" class="htg-bmi">
                 <input type="button" value="Registrasi Online Ahli Gizi" class="htg-bmi">
             </div>
-
+            <!--
             <aside>
                 <a href="#header"><i class="top fa-solid fa-arrow-up"></i></a>
             </aside>
+            -->
         </main>
 
         <footer id="download">
